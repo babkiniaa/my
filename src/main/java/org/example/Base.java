@@ -5,12 +5,16 @@ import lombok.NonNull;
 import java.lang.Exception;
 
 @Inheritance(day = 1)
-public class Base {
-}
+abstract class Base {
+    abstract void process(DataContainer dataContainer);
 
+    abstract void process1(DataContainer dataContainer);
+}
+@Inheritance(day = 1)
 class Child extends Base {
-    @RepeatableAnnotation(hour = 1, forever = 12, description = "hi")
-    public void process(DataContainer dataContainer) {
+    @Override
+    @RepeatableAnnotation(hour = 1, forever = 1, description = "hi")
+    void process(DataContainer dataContainer) {
         try {
             dataContainer.setDay(12);
             dataContainer.setTemp(22);
@@ -19,11 +23,24 @@ class Child extends Base {
             System.out.println(e);
         }
     }
-}
 
+    @Override
+    @RepeatableAnnotation(hour = 2, forever = 2, description = "hi1")
+    void process1(DataContainer dataContainer) {
+        try {
+            dataContainer.setDay(12);
+            dataContainer.setTemp(22);
+            dataContainer.setDescription("Холодно, сидим дома1");
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        }
+    }
+}
+@Inheritance(day = 1)
 class Child2 extends Base {
-    @RepeatableAnnotation(hour = 2, forever = 13, description = "bye")
-    public void process(@NonNull DataContainer dataContainer) {
+    @Override
+    @RepeatableAnnotation(hour = 2, forever = 1, description = "bye")
+    void process(DataContainer dataContainer) {
         try {
             dataContainer.setDay(1);
             dataContainer.setTemp(2);
@@ -32,10 +49,23 @@ class Child2 extends Base {
             System.out.println(e);
         }
     }
+
+    @Override
+    @RepeatableAnnotation(hour = 3, forever = 2, description = "bye2")
+    void process1(DataContainer dataContainer) {
+        try {
+            dataContainer.setDay(12);
+            dataContainer.setTemp(22);
+            dataContainer.setDescription("Холодно, сидим дома1");
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        }
+    }
 }
 
-@Inheritance(day = 1)
+@Inheritance(day = 2)
 class Child3 extends Base {
+    @Override
     @RepeatableAnnotation(hour = 12, forever = 1, description = "Who i")
     public void process(DataContainer dataContainer) {
         try {
@@ -46,6 +76,17 @@ class Child3 extends Base {
             System.out.println(e);
         }
     }
-}
 
+    @Override
+    @RepeatableAnnotation(hour = 3, forever = 2, description = "Who i1")
+    void process1(DataContainer dataContainer) {
+        try {
+            dataContainer.setDay(11);
+            dataContainer.setTemp(21);
+            dataContainer.setDescription("Я сам не знаю1");
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        }
+    }
+}
 

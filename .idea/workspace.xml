@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67c5d6f3-371e-4931-b243-590295586210" name="Changes" comment="Все">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/test.java" afterDir="false" />
+    <list default="true" id="67c5d6f3-371e-4931-b243-590295586210" name="Changes" comment="точно Все">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718718552912</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="точно Все">
+      <created>1718719688648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718719688648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +173,7 @@
     <MESSAGE value="сделал 3 задарие" />
     <MESSAGE value="ура" />
     <MESSAGE value="Все" />
-    <option name="LAST_COMMIT_MESSAGE" value="Все" />
+    <MESSAGE value="точно Все" />
+    <option name="LAST_COMMIT_MESSAGE" value="точно Все" />
   </component>
 </project>
