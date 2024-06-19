@@ -7,9 +7,9 @@ import java.lang.Exception;
 
 @Inheritance(day = 1)
 abstract class Base {
-    abstract void process(DataContainer dataContainer);
+    abstract void process(@NotNull DataContainer dataContainer);
 
-    abstract void process1(DataContainer dataContainer);
+    abstract void process1(@NotNull DataContainer dataContainer);
 }
 
 @Inheritance(day = 1)
