@@ -22,7 +22,7 @@ class Child extends Base {
     }
 
     @Override
-    @RepeatableAnnotation(hour = 2, forever = 2, description = "hi1")
+    @RepeatableAnnotation(hour = 1, forever = 2, description = "hi1")
     void process1(@NonNull DataContainer dataContainer) {
             dataContainer.setDay(12);
             dataContainer.setTemp(22);

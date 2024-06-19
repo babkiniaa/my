@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67c5d6f3-371e-4931-b243-590295586210" name="Changes" comment="часы">
+    <list default="true" id="67c5d6f3-371e-4931-b243-590295586210" name="Changes" comment="Файл в файл и обратно в файл">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IOC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IOC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718804506092</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Файл в файл и обратно в файл">
+      <created>1718807198421</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718807198421</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +211,7 @@
     <MESSAGE value="Устал, что трусы порвались" />
     <MESSAGE value="втеочка" />
     <MESSAGE value="часы" />
-    <option name="LAST_COMMIT_MESSAGE" value="часы" />
+    <MESSAGE value="Файл в файл и обратно в файл" />
+    <option name="LAST_COMMIT_MESSAGE" value="Файл в файл и обратно в файл" />
   </component>
 </project>

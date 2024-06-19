@@ -14,6 +14,7 @@ import java.util.stream.Stream;
 public class Reflection {
 
     IOC ioc = new IOC();
+    String rider = "";
     public List<Class> init(List<Class> child) {
         child.add(Child.class);
         child.add(Child2.class);
@@ -35,7 +36,8 @@ public class Reflection {
             for(Method m: ms){
                 m.invoke(s, dc);
                 System.out.println(dc.toString());
-                ioc.writeFile(dc.toString());
+                rider = rider + dc.toString() + '\n';
+//                ioc.writeFile(dc.toString());
             }
         }
     }
@@ -45,5 +47,6 @@ public class Reflection {
         init(children);
         children = searchneed(children, day);
         inv(children, hour, dataContainer);
+        ioc.writeFile(rider);
     }
 }
