@@ -12,6 +12,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Reflection {
+
+    IOC ioc = new IOC();
     public List<Class> init(List<Class> child) {
         child.add(Child.class);
         child.add(Child2.class);
@@ -21,7 +23,6 @@ public class Reflection {
 
     public List<Class> searchneed(List<Class> child, int day) {
         child = child.stream().filter(x -> ((Inheritance)x.getAnnotation(Inheritance.class)).day() == day).collect(Collectors.toList());
-        System.out.println(child);
         return child;
 
     }
@@ -33,7 +34,9 @@ public class Reflection {
             ms = ms.stream().sorted(Comparator.comparingInt(x -> ((RepeatableAnnotation)x.getAnnotation(RepeatableAnnotation.class)).forever())).toList();
             for(Method m: ms){
                 m.invoke(s, dc);
-                System.out.println(dc.toString());            }
+                System.out.println(dc.toString());
+                ioc.writeFile(dc.toString());
+            }
         }
     }
 

@@ -21,8 +21,8 @@ public class IOC implements IO {
 
     @Override
     public void writeFile(String str) {
-        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
-        String filename = "log" + timestamp + ".txt";
+        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH_mmss"));
+        String filename = "log/log_" + timestamp + ".txt";
         cleanLogDirectory(filename);
         PrintWriter writer = null;
         try {
@@ -38,12 +38,12 @@ public class IOC implements IO {
 
     @Override
     public void cleanLogDirectory(String filename) {
-        File logDir = new File(filename);
+        File logDir = new File("log");
         File[] files = logDir.listFiles();
-        if (files != null && files.length > 2) {
+        if (files != null && files.length > 1) {
             Arrays.stream(files)
                     .sorted((f1, f2) -> Long.compare(f2.lastModified(), f1.lastModified()))
-                    .skip(2)
+                    .skip(1)
                     .forEach(File::delete);
         }
     }
