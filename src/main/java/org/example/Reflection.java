@@ -19,7 +19,7 @@ public class Reflection {
         return child;
     }
 
-    public List<Class> searchneed(List<Class> child, int day) {
+    public List<Class> searchneed(List<Class> child, int day, int hour) {
         child = child.stream().filter(x -> ((Inheritance)x.getAnnotation(Inheritance.class)).day() == day).collect(Collectors.toList());
         System.out.println(child);
         return child;
@@ -36,11 +36,11 @@ public class Reflection {
         }
     }
 
-    public void refl(int day, DataContainer dataContainer) throws InvocationTargetException, IllegalAccessException, InstantiationException {
+    public void refl(int day, int hour, DataContainer dataContainer) throws InvocationTargetException, IllegalAccessException, InstantiationException {
         Child3.class.getAnnotation(Inheritance.class).day();
         List<Class> children = new ArrayList<>();
         init(children);
-        children = searchneed(children, day);
+        children = searchneed(children, day, hour);
         inv(children, dataContainer);
     }
 }
