@@ -14,7 +14,6 @@ import java.util.stream.Stream;
 public class Reflection {
 
     IOC ioc = new IOC();
-    String rider = "";
     public List<Class> init(List<Class> child) {
         child.add(Child.class);
         child.add(Child2.class);
@@ -27,7 +26,7 @@ public class Reflection {
         return child;
 
     }
-    public void inv(List<Class> child, int hour, DataContainer dc) throws InvocationTargetException, IllegalAccessException, InstantiationException {
+    public String inv(List<Class> child, int hour, String rider, DataContainer dc) throws InvocationTargetException, IllegalAccessException, InstantiationException {
         for(Class sub : child){
             Object s = sub.newInstance();
             List<Method> ms = List.of(sub.getDeclaredMethods());
@@ -40,13 +39,15 @@ public class Reflection {
 //                ioc.writeFile(dc.toString());
             }
         }
+        return rider;
     }
 
     public void refl(int day, int hour, DataContainer dataContainer) throws InvocationTargetException, IllegalAccessException, InstantiationException {
+        String rider = "";
         List<Class> children = new ArrayList<>();
         init(children);
         children = searchneed(children, day);
-        inv(children, hour, dataContainer);
+        System.out.println(inv(children, hour, rider, dataContainer));
         ioc.writeFile(rider);
     }
 }

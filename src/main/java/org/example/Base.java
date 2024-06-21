@@ -15,7 +15,7 @@ abstract class Base {
 class Child extends Base {
     @Override
     @RepeatableAnnotation(hour = 1, forever = 1, description = "hi")
-    void process(@NonNull DataContainer dataContainer) {
+    public void process(@NonNull DataContainer dataContainer) {
         dataContainer.setDay(12);
         dataContainer.setTemp(22);
         dataContainer.setDescription("Холодно, сидим дома");
@@ -23,7 +23,7 @@ class Child extends Base {
 
     @Override
     @RepeatableAnnotation(hour = 1, forever = 2, description = "hi1")
-    void process1(@NonNull DataContainer dataContainer) {
+    public void process1(@NonNull DataContainer dataContainer) {
             dataContainer.setDay(12);
             dataContainer.setTemp(22);
             dataContainer.setDescription("Тепло, сидим дома");
@@ -34,7 +34,7 @@ class Child extends Base {
 class Child2 extends Base {
     @Override
     @RepeatableAnnotation(hour = 2, forever = 1, description = "bye")
-    void process(@NonNull DataContainer dataContainer) {
+    public void process(@NonNull DataContainer dataContainer) {
         dataContainer.setDay(1);
         dataContainer.setTemp(2);
         dataContainer.setDescription("Холодно, иди гуляй");
@@ -42,7 +42,7 @@ class Child2 extends Base {
 
     @Override
     @RepeatableAnnotation(hour = 3, forever = 2, description = "bye2")
-    void process1(@NonNull DataContainer dataContainer) {
+    public void process1(@NonNull DataContainer dataContainer) {
         dataContainer.setDay(12);
         dataContainer.setTemp(22);
         dataContainer.setDescription("Холодно, лучше посижу дома");
@@ -61,7 +61,7 @@ class Child3 extends Base {
 
     @Override
     @RepeatableAnnotation(hour = 3, forever = 2, description = "Who i1")
-    void process1(@NonNull DataContainer dataContainer) {
+    public void process1(@NonNull DataContainer dataContainer) {
         dataContainer.setDay(11);
         dataContainer.setTemp(21);
         dataContainer.setDescription("Посмотри сам");
