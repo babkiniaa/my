@@ -36,7 +36,6 @@ public class Reflection {
                 m.invoke(s, dc);
                 System.out.println(dc.toString());
                 rider = rider + dc.toString() + '\n';
-//                ioc.writeFile(dc.toString());
             }
         }
         return rider;
