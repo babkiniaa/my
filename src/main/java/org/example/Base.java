@@ -1,9 +1,7 @@
 package org.example;
 
 import lombok.NonNull;
-import org.jetbrains.annotations.NotNull;
 
-import java.lang.Exception;
 @Inheritance(day = 1)
 abstract class Base {
     abstract void process(@NonNull DataContainer dataContainer);
@@ -24,9 +22,9 @@ class Child extends Base {
     @Override
     @RepeatableAnnotation(hour = 1, forever = 2, description = "hi1")
     public void process1(@NonNull DataContainer dataContainer) {
-            dataContainer.setDay(12);
-            dataContainer.setTemp(22);
-            dataContainer.setDescription("Тепло, сидим дома");
+        dataContainer.setDay(12);
+        dataContainer.setTemp(22);
+        dataContainer.setDescription("Тепло, сидим дома");
     }
 }
 

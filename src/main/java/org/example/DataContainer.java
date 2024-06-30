@@ -1,19 +1,13 @@
 package org.example;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
-import java.lang.annotation.*;
 
 @Data
 public class DataContainer {
 
-    public int day;
+    private int day = 0, temp = 0;
 
-    public String description;
-
-    public int temp;
+    private String description = "";
 
 
 }

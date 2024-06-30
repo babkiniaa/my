@@ -4,10 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67c5d6f3-371e-4931-b243-590295586210" name="Changes" comment="сделал второе">
+    <list default="true" id="67c5d6f3-371e-4931-b243-590295586210" name="Changes" comment="ну уже ближе к делу, ближе к телу">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Man.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bean/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/component/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/component/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/component/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/component/Man.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/component/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/component/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RepeatableAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RepeatableAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +59,11 @@
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="ReflectionTest.refl" />
+    </enabled-run-configurations>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -56,20 +80,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_directory_selection": "C:/Users/Ярик/Desktop/annotation/src/test/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.customizations"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -81,20 +106,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.component.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.bean.Main" />
-      <module name="annotation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReflectionTest.refl">
     <configuration name="org.component.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.component.Main" />
       <module name="annotation" />
@@ -108,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReflectionTest1.refl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="annotation" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +129,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest1" />
+      <option name="METHOD_NAME" value="refl" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectionTest.refl (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="annotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="example" />
+      <option name="MAIN_CLASS_NAME" value="example.ReflectionTest" />
+      <option name="METHOD_NAME" value="refl" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,7 +168,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionTest.refl1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReflectionTest.testRefl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="annotation" />
       <extension name="coverage">
         <pattern>
@@ -149,7 +178,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
-      <option name="METHOD_NAME" value="refl1" />
+      <option name="METHOD_NAME" value="testRefl" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.component.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ReflectionTest" />
-        <item itemvalue="JUnit.ReflectionTest.refl1" />
         <item itemvalue="JUnit.ReflectionTest.refl" />
+        <item itemvalue="JUnit.ReflectionTest1.refl" />
+        <item itemvalue="JUnit.ReflectionTest.refl (1)" />
+        <item itemvalue="JUnit.ReflectionTest.testRefl" />
+        <item itemvalue="Application.org.component.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719424828756</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ну уже ближе к делу, ближе к телу">
+      <created>1719478752945</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719478752945</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +370,7 @@
     <MESSAGE value="тесты полетели" />
     <MESSAGE value="new" />
     <MESSAGE value="сделал второе" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделал второе" />
+    <MESSAGE value="ну уже ближе к делу, ближе к телу" />
+    <option name="LAST_COMMIT_MESSAGE" value="ну уже ближе к делу, ближе к телу" />
   </component>
 </project>
